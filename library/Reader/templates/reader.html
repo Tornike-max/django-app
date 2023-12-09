@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readers</title>
+  </head>
+  <body>
+    <div>
+      <h1>READERS</h1>
+      <ul>
+        {% for reader in readers %}
+        <li>{{ reader.fullName }} - {{ reader.email }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
